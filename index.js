@@ -4,7 +4,7 @@ function cardinality(cc) {
             return str.replace(
                 /(^|\s)(n\.w\.|nw|n\.e\.|ne|s\.w\.|sw|s\.e\.|se)(\s|$)/gi,
                 (match, g1, g2, g3) => {
-                    return g1 + g2.toUpperCase().replace('.', '') + g3;
+                    return g1 + g2.toUpperCase().replace(/\./g, '') + g3;
                 }
             );
         };
