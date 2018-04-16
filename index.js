@@ -65,7 +65,8 @@ module.exports = function(cc) {
             pre: [],
             post: [],
             minors: [
-                'du'
+                'du',
+                'der'
             ]
         };
     }
